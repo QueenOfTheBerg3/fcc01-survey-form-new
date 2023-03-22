@@ -1,0 +1,78 @@
+:root {
+    --bodybackgr: #b5b588;
+    --maincolor: #354529;
+    --headcolor: #752020;
+    --desccolor: #853030;
+    --tinycolor: #354529; /* change for testing  */
+    --bordercolor: #354529;
+    --inputbackgr: #d3e4f5;
+    --inputcolor: #000000;
+    --labelcolor: #380808;
+    --buttonbackgr: #ddee00;
+  }
+  body {
+    background-color: var(--bodybackgr);
+    font-family: Tahoma, sans-serif;
+  }
+  #title {
+    color: var(--headcolor);
+  }
+  #description {
+    color: var(--desccolor);
+  }
+  #survey-form {
+    border: 2px dashed var(--bordercolor);
+    margin: 0.1rem;
+    padding: 0.5rem;
+  }
+  input, select, textarea {
+    background-color: var(--inputbackgr);
+    border: 1px solid var(--labelcolor);
+    color: var(--inputcolor);
+    display: block;
+    width:65%;
+  }
+  label {
+    color: var(--labelcolor);
+    display: block;
+    width:80%;
+    padding-top: 0.2rem;
+  }
+  @media (max-width:600px) {
+    label {
+      color: var(--tinycolor);
+      width:97%;
+  }}
+  input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    width: 25%;
+    max-width: 5rem;
+  }
+  form p {
+    color: var(--labelcolor);
+    margin: 0;
+    padding-top: 0.8rem;
+  }
+  #submit {
+    background-color: var(--buttonbackgr);
+    display: block;
+    border: 1px solid var(--headcolor);
+    margin: 0.3rem auto;
+    width: 25vw;
+    min-width: 1.5rem;
+    max-width: 6rem;
+    font-size: 1.2rem;
+  }
+  #thanksb4 {
+    display: none;
+  }
+  #thanks {
+    display: block;
+  }
+  #fineprint {
+    font-size: 0.7rem;
+    color: var(--headcolor);
+    width: 65%;
+    margin: 0.3rem auto;
+    text-align: center;
+  } 

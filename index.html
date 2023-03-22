@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" width="device-width" initial-scale="1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Holiday trip feedback</title>
+</head>
+<body>
+  <h1 id="title">Holiday trip feedback</h1>
+  <p id="description">We're stoked that you joined us for an adventure recently.  Please tell us how you experienced our hospitality.</p>
+  <form id="survey-form" action="#">
+    <label id="name-label" for="name">Enter name:* <input id="name" type="text" placeholder="Your Name" required></label>
+    <label id="email-label" for="email">Enter email:* <input id="email" type="email" placeholder="someone@example.com" required></label>
+    <label id="number-label" for="number">Enter number of guests: <input id="number" type="number" min="1" max="15" placeholder="max of 15 per trip"></label>
+  
+    <label for="dropdown">Which trip did you go on:<select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Up the River by Boat</option>
+      <option value="2">Up the Mountain by Bus</option>
+      <option value="3">Nature reserve by Bus</option>
+    </select></label>
+    <p>What was your main activity:</p>
+    <label><input id="family" name="activity" value="family" type="checkbox">Family outing</label>
+    <label><input id="birding" name="activity" value="birding" type="checkbox">Bird watching</label>
+    <label><input id="explore" name="activity" value="explore" type="checkbox">Guided exploration</label>
+    <!--label><input id="cycle" name="activity" value="cycle" type="checkbox">Cycling tour</label-->
+    
+    <p>What was your meal option:</p>
+    <label><input id="vegefood" name="foodpicky" value="vegefood" type="radio">Vegetarian</label>
+    <label><input id="wholefood" name="foodpicky" value="wholefood" type="radio">Wholesome</label>
+    <label><input id="fastfood" name="foodpicky" value="fastfood" type="radio">Fastfood</label>
+    <label><input id="barbeque" name="foodpicky" value="barbeque" type="radio">Braai (barbeque)</label>
+    <label>Any additional comments:<textarea id="comments" rows="3" cols="24"></textarea></label>
+    <input id="submit" type="submit" value="Send" onClick="showThanks()">
+  </form>
+  <p id="thanksb4">
+    Thank you for your valued feedback.<br/>
+    If there is an error, please correct it and press <b>Send</b> again.<br/>
+    We look forward to seeing you soon for more healthy, outdoor fun.
+  </p>
+  
+  <footer id="fineprint">
+    <p>Planning to expand our activities to include CYCLING TOURS soon.<br/>Please indicate if you would be interested in the Comments box (include the word <b>cycling</b> in the text).</p>
+    <p>Copyright nobody in particular</p>
+  </footer>
+<script>
+  function showThanks() {
+    document.getElementById("thanksb4").id = "thanks";
+  }
+</script>
+</body>
+<html>
